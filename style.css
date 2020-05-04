@@ -1,0 +1,113 @@
+body{
+    font-family:Georgia, serif;
+    line-height:10px;
+    background-color:BurlyWood;
+}
+
+/* Website title & image */
+img{
+  padding: 10px;
+  width: 150px;
+  background:white;
+}
+
+h2{
+  text-align:center;
+}
+
+.header{
+  padding:60px;
+  text-align:center;
+  background:SaddleBrown;
+  color:white;
+  font-size:30px;
+}
+
+
+/* Style column alignment */
+*{
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left, .right {
+  width: 25%;
+  height:1000px;
+  background-color:#f1f1f1;
+}
+
+.middle {
+  width: 50%;
+  height:1000px;
+  background-color:BurlyWood;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the tabs */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family:Georgia, serif;
+  text-align:center;
+}
+
+
+/* Style the tab buttons */
+.tab button {
+  background-color: inherit;
+  border: none;
+  color: DimGrey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.tab button:focus {
+  outline:0;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+.footer{
+  background-color:SaddleBrown;
+  height:100px;
+  padding:10px;
+  text-align:center;
+}
