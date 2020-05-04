@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Home</title>
-            <style>
-               body{background-color: darkgrey;}
-            </style>
-        </head>
-        <body>
-            <h1>Home</h1>
-            <br>
-            <h3>Links</h3>
-            <a href="/HW1/mypage.html">mypage.html</a><br>
-            <a href="/HW1/mypage_bootstrap.html">mypage_bootstrap.html</a><br>
-            <a href="/HW1/form.html">form.html</a><br>
-            <a href="/HW2/tic-tac-toe.html">tic-tac-toe.html</a><br>
-        </body>
-    </html>
+<html>
+    <head>
+        <!-- Web browser title & image -->
+        <title>Stoicism</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- external CSS and jQuery-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Website title -->
+        <div class="header">
+            <img src="pillar.png" alt="Site Logo">
+            <h1>Stoicism</h1>
+        </div>
+        <div class="row">
+            <div class="column left"></div>
+            <div class="column middle">
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Stoicism')" id="AboutPage">What Is Stoicism?</button>
+                    <button class="tablinks" onclick="openTab(event, 'Physics')">Physics</button>
+                    <button class="tablinks" onclick="openTab(event, 'Logic')">Logic</button>
+                    <button class="tablinks" onclick="openTab(event, 'Ethics')">Ethics</button>
+                    <button class="tablinks" onclick="openTab(event, 'Citations')">Citations</button>
+                </div>
+                <!-- Tab content -->
+                <div id="Stoicism" class="tabcontent">
+                    <h2>What Is Stoicism?</h2>
+                    <br>
+                    <p>Stoicism is a philosophy that originated in the Hellenistic period. The goal is to become a sage, who</p>
+                    <p>is someone who's achieved moral & intellectual perfection.</p>
+                </div>
+                <div id="Physics" class="tabcontent">
+                    <h2>Physics</h2>
+                    <p>This is about stoic physics.</p>
+                </div>
+                <div id="Logic" class="tabcontent">
+                    <h2>Logic</h2>
+                    <p>This is about stoic logic.</p>
+                </div>
+                <div id="Ethics" class="tabcontent">
+                    <h2>Ethics</h2>
+                    <p>This is about stoic ethics.</p>
+                </div>
+                <div id="Citations" class="tabcontent">
+                    <h2>Citations</h2>
+                    <p>This is the citations page.</p>
+                </div>
+            </div>
+            <div class="column right"></div>
+        </div>
+        <div class="footer">
+          <p>Copyright &copy; 2020 by Nicole Dong</p>
+        </div>
+        <!-- External javascript -->
+        <script src="style.js"></script>
+    </body>
+</html>
